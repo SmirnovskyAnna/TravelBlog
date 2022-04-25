@@ -36,12 +36,12 @@ export default {
         hotspot: true
       }
     },
-    // {
-    //   name: 'categories',
-    //   type: 'array',
-    //   title: 'categories',
-    //   of: [{type: 'reference', to: {type: 'category'}}]
-    // },
+    {
+      name: 'categories',
+      type: 'array',
+      title: 'categories',
+      of: [{type: 'reference', to: {type: 'category'}}]
+    },
     {
       name: 'publishAt',
       type: 'datetime',
