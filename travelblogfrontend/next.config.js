@@ -2,5 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
 }
+const isProd = process.env.NODE_ENV === 'production'
 
-module.exports = nextConfig
+module.exports = {
+  nextConfig,
+  assetPrefix: isProd ? '/your-github-repo-name/' : ''
+}
