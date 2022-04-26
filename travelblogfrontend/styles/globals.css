@@ -13,6 +13,7 @@ a {
 
 /* App */
 .app-container {
+  display: flex;
   background-color: rgb(145, 156, 143);
 }
 
@@ -31,6 +32,59 @@ nav.nav-container .nav.item-container {
 }
 
 /* HomePage */
-.posts-container {
+.dashboard {
+  width: 100%;
+}
 
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Card */
+.card-container {
+  background-color: rgb(255, 255, 255);
+  width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1;
+}
+
+.tag-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tag-container .tag {
+  color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  margin: 10px 0 10px 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container .info-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tag-container .tag:first-child {
+  margin-left: 0 !important;
+}
+
+/* Images */
+.main-image,
+.post-image {
+  width: 100%;
+}
+
+.avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
 }
