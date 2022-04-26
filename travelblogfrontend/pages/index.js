@@ -1,17 +1,16 @@
-import { getClient } from "../lib/sanity.server"
-import groq from 'groq'
-import Head from 'next/head'
-import Link from 'next/link'
-import Card from '../components/Card'
+import { getClient } from "../lib/sanity.server";
+import groq from "groq";
+import Head from "next/head";
+import Link from "next/link";
+import Card from "../components/Card";
 
 const Home = ({ posts }) => {
-
-  console.log(posts)
+  console.log(posts);
   return (
     <div className="dashboard">
       <Head>
         <title>Nomad Travel Blog</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
       <div className="posts-container">
@@ -22,13 +21,13 @@ const Home = ({ posts }) => {
             as={`/posts/${post.slug.current}`}
             passHref
           >
-            <Card post={post}/>
+            <Card post={post} />
           </Link>
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export async function getStaticProps({ preview = false }) {
   const posts = await getClient(preview).fetch(groq`
@@ -42,14 +41,12 @@ export async function getStaticProps({ preview = false }) {
     mainImage,
     slug,
     publishedAt
-  }`)
+  }`);
   return {
     props: {
-      posts
-    }
-  }
+      posts,
+    },
+  };
 }
 
-export default Home
-
-
+export default Home;

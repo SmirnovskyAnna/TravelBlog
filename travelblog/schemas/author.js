@@ -1,40 +1,40 @@
 export default {
-  name: 'author',
-  title: 'Author',
-  type: 'document',
+  name: "author",
+  title: "Author",
+  type: "document",
   fields: [
     {
-      name: 'username',
-      title: 'Username',
-      type: 'string',
+      name: "username",
+      title: "Username",
+      type: "string",
     },
     {
-      name: 'avatar',
-      title: 'Avatar',
-      type: 'image',
+      name: "avatar",
+      title: "Avatar",
+      type: "image",
       options: {
-        hotspot: true
-      }
+        hotspot: true,
+      },
     },
     {
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
+      name: "slug",
+      title: "Slug",
+      type: "slug",
       options: {
-        sourse: 'usename',
-        maxLength: 96
-      }
+        sourse: "usename",
+        maxLength: 96,
+      },
     },
     {
-      name: 'bio',
-      title: 'Bio',
-      type: 'text',
-    }
+      name: "bio",
+      title: "Bio",
+      type: "text",
+    },
   ],
   preview: {
     select: {
-      title: 'username',
-      media: 'avatar'
-    }
-  }
-}
+      title: "username",
+      media: "avatar",
+    },
+  },
+};
