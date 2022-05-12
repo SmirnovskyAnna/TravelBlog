@@ -1,6 +1,6 @@
 # Travel Blog :flight_departure:
 
-This project is a full stack application built with [React.js] (https://reactjs.org/), [NextJS] (https://nextjs.org/), [Mapbox] (https://docs.mapbox.com/mapbox-gl-js/api/), [Sanity.io] (https://www.sanity.io/).
+This project is a full stack application built with [React.js](https://reactjs.org/), [NextJS](https://nextjs.org/), [Mapbox](https://docs.mapbox.com/mapbox-gl-js/api/), [Sanity.io](https://www.sanity.io/).
 
 The application has:
   - :receipt: admin panel, 
