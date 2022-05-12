@@ -5,8 +5,8 @@ This project is a full stack application built with [React.js] (https://reactjs.
 The application has:
   - :receipt: admin panel, 
   - :door: a login form, 
-  - ::world_map:: a page with travel's articles,
-  - ::newspaper:: the article with photos, geolocation.
+  - :world_map: a page with travel's articles,
+  - :newspaper: the article with photos, geolocation.
 
 Project has _sanity's schemas_: post, blockContent, category, author.
 
